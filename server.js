@@ -21,7 +21,7 @@ const server = app.listen(3000, function(){
 const io = socket(server);
 
 // Socket definition
-io.on('connection', function(socket){
+io.on('connection', function(socket) {
   console.log('A user connected');
 });
 

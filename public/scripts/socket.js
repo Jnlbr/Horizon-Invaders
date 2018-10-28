@@ -29,7 +29,7 @@ socket.on('up', (ins) => {
     teclado.up = press;
   }
 });
-socket.on('shot', () => {
+socket.on('fire', () => {
   if(teclado.enter) {
     teclado.shoot = true;
   }
