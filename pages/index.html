@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Horizon Invaders</title>
+    <style type="text/css">
+        canvas {
+            border: 1px solid black;
+            background-image: url("public/images/landscape-1920x1080.png");
+        }
+        
+        body {
+            margin: 0;
+        }
+    </style>
+  </head>
+  <body>
+      <canvas>
+      </canvas>
+      <audio muted="muted" src="public/sounds/bgm1.mp3" id='bgm1'></audio>
+      <audio muted="muted" src="public/sounds/track1.ogg" id='you_lose_a_life'></audio>
+      <audio muted="muted" src="public/sounds/hit1.ogg" id='enemy-f1'></audio>
+      <audio muted="muted" src="public/sounds/hit2.ogg" id='enemy-f2'></audio>
+      
+      <img src="public/images/tanks_newGreytankBase.png" id='tank-model' style='display: none'>
+      <img src="public/images/tanks_turret2.png" id="tankturret-model" style="display: none">
+      <img src="public/images/tank_explosion2.png" id='explode1' style="display: none">
+      <img src="public/images/tank_explosion3.png" id='explode2' style="display: none">
+      <img src="public/images/tank_explosion3.png" id='explode3' style="display: none">
+      <img src="public/images/tank_bullet1.png" id='bullet-model' style="display: none">
+      <img src="public/images/shipBeige_manned.png" id='enemy-model' style="display: none">
+      <img src="public/images/shipGreen_manned.png" id='enemy-model2' style="display: none">
+      <img src="public/images/Mine.png" id='mine-model' style="display: none">
+      <img src="public/images/paracaidista.png" id='paratrooper-model' style="display: none">
+      <img src="public/images/paracaidista2.png" id='paratrooper2-model' style="display: none">
+      
+      <script src="public/scripts/extra.js"></script>
+      <script src='public/scripts/tank.js'></script>
+      <script src='public/scripts/enemy.js'></script>
+      <script src='public/scripts/shoot.js'></script>
+      <script src="public/scripts/main.js"></script>
+      <script src="/socket.io/socket.io.js"></script>
+      <script src="public/scripts/socket.js"></script>
+  </body>
+</html>
