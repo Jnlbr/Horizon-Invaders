@@ -1,0 +1,16 @@
+{
+  "name": "Horizon-Invaders",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Jnlbr/Horizon-Invaders.git",
+  "author": "Jean Lambert <jlambert@cps.la>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.18.5",
+    "socket.io": "^2.1.1"
+  }
+}
